@@ -10,13 +10,30 @@ on:
   
 jobs:
   hello:
-    runs-on: self-hosted
+    runs-on: [ self-hosted,custom-runner ]
     
     steps:
     - uses: actions/checkout@v2
 
     - name: Hello World
       run: echo -e " Helloooooo  World! "
+  hello-2:
+    runs-on: [ self-hosted,custom-runner ]
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Hello World
+      run: echo -e " Helloooooo  World! "
+  hello-3:
+    runs-on: [ self-hosted,custom-runner ]
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Hello World
+      run: echo -e " Helloooooo  World! "
+
 
 
 
